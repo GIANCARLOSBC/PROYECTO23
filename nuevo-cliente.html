@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Empleados</title>
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-100 bg-gray-200">
+    <div class="md:flex min-h-screen md:align-top">
+        <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 cabez px-5 py-10">
+            <h1 class="uppercase text-white tracking-wide text-2xl  font-bold mt-2">PANEL REGISTRO</h1>
+            <p class="mt-10 text-white">Administra tus Clientes con el CRM - IndexedDB</p>
+            <nav class="mt-8">
+                <a 
+                    href="nuevo-cliente.html" 
+                    class="px-3 py-1 text-white block hover:bg-teal-900 mt-2 hover:text-yellow-400 color3"
+                >Nuevo Cliente</a>
+
+                <a 
+                    href="tables.html" 
+                    class="px-3 py-1 text-white block hover:bg-teal-900 mt-2 hover:text-yellow-400 color3"
+                >Regresar</a>
+            </nav>
+        </aside> <!--sidebar-->
+        <main class="md:w-3/5  xl:w-4/5 px-5 py-10" >
+
+            <div class="flex flex-col mt-10 items-center">
+
+                <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 w-10/12 md:w-8/12 lg:w-6/12">
+                    <div class=" shadow overflow-hidden sm:rounded-lg border-b border-gray-200 ">
+                        <form id="formulario" class="black p-3">
+                            <h2 class="text-3xl font-light text-center textnew">Nuevo Empleado</h2>
+                            <div class="mb-4">
+                                <input 
+                                    class="new2 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="nombre"
+                                    name="nombre"
+                                    type="text"
+                                    placeholder="Nombre Cliente"
+                                />
+                            </div>
+                            <div class="mb-4">
+                                <input 
+                                    class="new2 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    placeholder="Email Cliente"
+                                />
+                            </div>
+
+                            <div class="mb-4">
+                                <input 
+                                    class="new2 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="telefono"
+                                    name="telefono"
+                                    type="tel"
+                                    placeholder="Teléfono Cliente"
+                                />
+                            </div>
+
+                            <div class="mb-4">
+                                <input 
+                                    class="new2 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="empresa"
+                                    name="empresa"
+                                    type="text"
+                                    placeholder="Empresa Cliente"
+                                />
+                            </div>
+
+
+                            <input
+                                type="submit"
+                                class="button1 w-full mt-5 p-2 text-white uppercase font-bold"
+                                value="Agregar Cliente"
+                            />
+                        </form>
+                    </div>
+
+                </div>
+
+               
+
+            </div>
+
+            
+            
+            
+        </main>
+
+        <footer class="space">
+            <div class="">
+                <div class="">
+                    <span>Copyright &copy; Your Website 2023</span>
+                </div>
+            </div>
+        </footer>
+
+
+
+        
+    </div>
+    
+    <script src="js/nuevocliente.js"></script>
+    <script src="js/funciones.js"></script>
+</body>
+</html>
